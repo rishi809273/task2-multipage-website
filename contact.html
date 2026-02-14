@@ -3,42 +3,35 @@
 <head>
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">A TO Z SOLUTIONS</div>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+<div id="header"></div>
 
-<section class="contact-section">
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
   <h2>Contact Us</h2>
 
   <div class="contact-box">
-    <form name="contactForm" onsubmit="return validateForm()">
-      <input type="text" name="name" placeholder="Enter your name">
-      <input type="email" name="email" placeholder="Enter your email">
-      <textarea name="message" placeholder="Enter your message"></textarea>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Enter your name">
+      <small id="nameError"></small>
+
+      <input type="email" id="email" placeholder="Enter your email">
+      <small id="emailError"></small>
+
+      <textarea id="message" placeholder="Enter your message"></textarea>
+
       <button type="submit">Send Message</button>
     </form>
   </div>
 </section>
+<br><br><br>
+<!-- Footer -->
+<div id="footer"></div>
 
+<!-- JavaScript -->
+<script src="script.js"></script>
 
 </body>
-<br><br><br><br><br><br><br>
-<footer>
-  <p>© 2026 A TO Z SOLUTIONS. All Rights Reserved.</p>
-
-  <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms & Conditions</a>
-    <a href="#">Contact</a>
-  </div>
-</footer>
 </html>

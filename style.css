@@ -1,4 +1,6 @@
 .navbar {
+  
+  
   display: flex;
   justify-content: space-between;
   padding: 15px 40px;
@@ -183,5 +185,77 @@ footer {
 
 .footer-links a:hover {
   color: #667eea;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: white;
+  color: #333;
+}
+
+/* ===== DARK MODE (FINAL FIX) ===== */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+body.dark .navbar {
+  background: #1e1e1e;
+}
+
+/* Sections */
+body.dark .hero {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+
+body.dark .features {
+  background: #181818;
+}
+
+body.dark .about-section {
+  background: #121212;
+}
+
+body.dark .contact-section {
+  background: #121212;
+}
+
+/* Cards & boxes */
+body.dark .feature-card,
+body.dark .contact-box {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Text fix */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p {
+  color: #ffffff;
+}
+
+/* Footer */
+body.dark footer {
+  background: #000;
+}
+
+.navbar {
+  background: #667eea;
+  transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: #333;
 }
 
